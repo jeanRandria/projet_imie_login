@@ -36,8 +36,8 @@ class VerifyLogin extends CI_Controller {
 
 			 
 			   //Faire appel au model
-			   $result = $this->user->login($name, $password);
-			 
+			   $result = $this->user->login($name, $password);  
+			   
 			   if($result) //test
 			   {
 			   	//On crée la session (En PHP $_SESSION)

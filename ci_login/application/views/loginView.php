@@ -1,6 +1,8 @@
 <div class="container">
   <div class="jumbotron">
-  <?php echo validation_errors(); ?>
+
+  <!--  echo validation_errors(); pour afficher tous les erreurs en même temps
+
 
   <?php echo form_open('verifyLogin', 'role="form"  id="monform"');?>
 	<!-- <form role="form" action=""> -->
