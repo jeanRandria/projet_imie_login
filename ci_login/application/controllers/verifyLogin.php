@@ -24,8 +24,8 @@ class VerifyLogin extends CI_Controller {
 			//redirect('loginController', 'refresh');
 		}else
 		{
-			//Rédiriger vers une page protégée
-			redirect('admin', 'refresh');
+			//Rédiriger vers une controller qui envoi vers admin
+			redirect('adminController', 'refresh');
 		}
 	}
 
@@ -36,7 +36,7 @@ class VerifyLogin extends CI_Controller {
 
 			 
 			   //Faire appel au model
-			   $result = $this->user->login($name, $password);  
+			   $result = $this->user->_login($name, $password);  
 			   
 			   if($result) //test
 			   {
@@ -59,8 +59,4 @@ class VerifyLogin extends CI_Controller {
 			   }
 		 }
 
-	public function testFormulaire()
-	{
-
-	}
 }

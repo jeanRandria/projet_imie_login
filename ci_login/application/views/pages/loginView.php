@@ -1,10 +1,10 @@
 <div class="container">
   <div class="jumbotron">
 
-  <!--  echo validation_errors(); pour afficher tous les erreurs en même temps
+  <!--  echo validation_errors(); pour afficher tous les erreurs en même temps  -->
 
 
-  <?php echo form_open('verifyLogin', 'role="form"  id="monform"');?>
+  <?php echo form_open('verifyLogin', 'role="form"  id="monform"'); ?>
 	<!-- <form role="form" action=""> -->
 	<?php echo form_error('name'); ?>
 	  <div class="form-group">
@@ -16,7 +16,7 @@
 	    <label for="pwd">Password:</label>
 	    <input  class="form-control" id="password" name="password">
 	  </div>
-	  <button type="submit" class="btn btn-default">Valider</button>
+	  <button type="submit"  value="Login" class="btn btn-default">Valider</button>
 	   <?php echo MD5('supersecret'); ?>
 	</form>
   </div>
