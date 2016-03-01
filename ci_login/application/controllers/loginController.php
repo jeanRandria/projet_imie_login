@@ -18,6 +18,7 @@ class LoginController extends CI_Controller {
 	public function loadpage($page)
 	{
 		$this->load->view('common/headerView');
+		$this->load->view('common/navbarmenuvideView');
 		$this->load->view('pages/'.$page);
 		$this->load->view('common/footerView');
 	}
