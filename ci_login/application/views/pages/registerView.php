@@ -30,7 +30,7 @@
 				</div>
 				
 				<div class="form-group has-feedback">
-				<?php echo form_error('password'); ?>
+				<?php echo form_error('passwordAgain'); ?>
 					<label>Mot de passe</label>
 					<input type="password" name="passwordAgain" autocomplete="off" class="form-control" placeholder="Répeter mot de passe">
 					<i class="icon-lock form-control-feedback"></i>
@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="col-xs-6">
-						<button type="submit" class="btn btn-warning pull-right"><i class="icon-menu2"></i> Connexion</button>
+						<button type="submit" class="btn btn-warning pull-right"><i class="icon-menu2"></i> Enregistrer</button>
 					</div>
 				</div>
 			</div>
