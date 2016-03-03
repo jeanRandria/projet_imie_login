@@ -10,15 +10,21 @@ class RegisterController extends CI_Controller {
 
 	public function index()
 	{
-		$this->loadpage('registerView');
+		$data['valPasseAuView']=0;
+		if($this->session->flashdata('valeurPasse'))
+		{
+			$data['valPasseAuView']=$this->session->flashdata('valeurPasse');
+		}
+
+		$this->loadpage('registerView',$data);
 		
 	}
 
-	public function loadpage($page)
+	public function loadpage($page,$data)
 	{
 		$this->load->view('common/headerView');
 		$this->load->view('common/navbarmenuvideView');
-		$this->load->view('pages/'.$page);
+		$this->load->view('pages/'.$page,$data);
 		$this->load->view('common/footerView');
 	}
 

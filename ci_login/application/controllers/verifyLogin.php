@@ -67,6 +67,7 @@ class VerifyLogin extends CI_Controller {
 	public function loadPage($page)
 	{
 		$this->load->view('common/headerView');
+		$this->load->view('common/navbarmenuvideView');
 		$this->load->view('pages/'.$page);
 		$this->load->view('common/footerView');
 	}

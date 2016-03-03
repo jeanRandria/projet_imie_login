@@ -4,10 +4,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	Class UserModel extends CI_Model
 	{
 
+		function __construct()
+		{
+			parent::__construct();
+			$this->load->library('user');
+		}
+
+
 		public function get_all_users()
 		{
 			return $this-> db -> get('tbl_user');
 
+		}
+
+		//Utilisation d'oop plus poussé (User)
+		public function get_all_users_()
+		{
+		    $query = $this->db->get('tbl_user');
+		    $arr = array();
+
+		    foreach ($query->result_array() as $row)
+		    {
+		        $arr[] = new User($row['id'],$row['name'],$row['password']);
+		    }    
+
+		    return $arr;
 		}
 
 
@@ -48,9 +69,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		public function get_user_details_by_name($name) 
 		{
 
-			$this->db->where('password', $name);
-			$result = $this->db->get('tbl_user');
-
+			$result = $this->db->get_where('tbl_user',array('name'=>$name))->result();
+			
 			if($result) {
 				return $result;
 			} else {
@@ -87,11 +107,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		public function valid_username($name)
 		{
-			if($this->get_user_details_by_name($name) )
+			
+			//$this->get_user_details_by_name($name));
+
+			if($this->get_user_details_by_name($name))
 			{
-				return true;
+				return false;//Cas ou l'utilisateur Existe déjà";
+
 			} else {
-				return false;
+
+				return true;//Cas ou l'utilisateur n'existe pas encore";
 			}
 		}
 

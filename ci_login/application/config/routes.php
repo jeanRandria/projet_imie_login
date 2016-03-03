@@ -51,9 +51,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['register']='registerController';
+// $route['register/passNotif/(:any)']='registerUserController/passNotif/'
 $route['registerUser']='registerUserController';
 $route['login']='loginController';
 $route['admin']='adminController';
+$route['logout']='adminController/logout';
 $route['default_controller'] = 'loginController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/projects/projet_imie_git/ci_login/';
+$config['base_url'] = 'http://localhost/projects/ci_login_git_V2/';
 
 /*
 |--------------------------------------------------------------------------
@@ -367,14 +367,18 @@ $config['encryption_key'] = 'hjjhfhdhfdù$^***_12154564';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'files';
+$config['sess_driver'] = 'database';//files on stock dans un fichier ,sinon database 
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
+$config['sess_save_path'] = 'ci_sessions';//NULL ou ci_sessions nom de la table qui stocke la session dans la base
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
-
+$config['sess_expire_on_close'] = FALSE;
+$config['sess_encrypt_cookie'] = FALSE;
+$config['sess_time_to_update'] = 300;
+$config['sess_match_ip'] = FALSE;
+$config['sess_match_useragent'] = TRUE;
 /*
 |--------------------------------------------------------------------------
 | Cookie Related Variables

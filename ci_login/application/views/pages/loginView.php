@@ -10,7 +10,6 @@
 				<div class="btn-group pull-right">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cogs"></i></a>
                     <ul class="dropdown-menu icons-right dropdown-menu-right">
-						<li><a href="#"><i class="icon-people"></i> Change user</a></li>
 						<li><a href="forget"><i class="icon-info"></i> Vous avez oublié?</a></li>
 						<li><a href="register"><i class="icon-support"></i>S'enregistrer</a></li>
                     </ul>

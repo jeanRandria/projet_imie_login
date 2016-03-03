@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -35,7 +35,7 @@
 						    </div>
 					    
 					    	<div class="caption text-center">
-					    		<h6><?php echo $name ?><small>Profil Administrateur</small></h6>
+					    		<h6><?php echo $name ?><small>Profil Utilisateur</small></h6>
 					    	</div>
 				    	</div>
 
@@ -48,22 +48,6 @@
 					</div>
 				</div>
 				<!-- /user dropdown -->
-
-
-				<!-- Main navigation -->
-				<ul class="navigation">
-					<li class="active"><a href="index.html"><span>Outils</span> <i class="icon-screen2"></i></a></li>
-					<li>
-						<ul>
-							<li><a href="ajouter">Ajouter des utilisateurs</a></li>
-							<li><a href="form_layouts.html">Supprimer des utilisateurs</a></li>
-							<li><a href="form_grid.html">Email</a></li>
-							<li><a href="wysiwyg.html">Liste Materiel</a></li>
-						</ul>
-					</li>
-
-				</ul>
-				<!-- /main navigation -->
 				
 			</div>
 		</div>

@@ -35,6 +35,9 @@
 					<input type="password" name="passwordAgain" autocomplete="off" class="form-control" placeholder="Répeter mot de passe">
 					<i class="icon-lock form-control-feedback"></i>
 				</div>
+				<div class="form-group has-feedback">
+					<input id="phpVar" type="hidden" name="token" value="<?php echo  $valPasseAuView; ?>">
+				</div>
 
 
 				<div class="row form-actions">
@@ -47,7 +50,10 @@
 				</div>
 			</div>
     	</form>
+    	<li><a id="btnErreurAjout" onclick="$.jGrowl('A message with a header', { header: 'Important' });">Notification with header</a></li>
+    	<li><a onclick="$.jGrowl('Something went wrong here', { sticky: true, theme: 'growl-error', header: 'Error!' });">Error notification</a></li>
 	</div>  
-	<!-- /register-->
+	<p><?php echo $valPasseAuView ?></p>
+
 
  

@@ -1145,7 +1145,7 @@ $(function() {
 	});
 
 	//====== Test Utilisation JGrowl =====//
-	$.jGrowl("Hello world!");
+	//$.jGrowl("Hello world!");
 
 
 });
