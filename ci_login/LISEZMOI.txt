@@ -1,3 +1,0 @@
-Ce projet est basé sur codeigniter.
-Il permet de se connecter un utilisateur et d'avoir des informations sur ce dernier
-ce projet sera modifié au fru et à mesure de l'avance du cours sur CI.
